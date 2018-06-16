@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  rocket.chat.mongoreader:
+    image: ${DOCKER_REGISTRY}rocketchatmongoreader
+    build:
+      context: .
+      dockerfile: Rocket.Chat.MongoReader/Dockerfile
